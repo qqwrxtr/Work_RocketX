@@ -1,0 +1,193 @@
+<!DOCTYPE html><html lang="ru"><head>
+
+	<title>Test Doc</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<link rel="stylesheet" type="text/css" href="css/select2.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+
+	<script async="" src="js/gtm.js"></script><script src="js/jquery.min.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script src="js/register.js"></script>
+
+</head>
+<body>
+	<div id="container">
+		<div id="money">
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="content_wrapper">
+
+			<div class="logos_block">
+				<div class="aviator_logo_block">
+					<img src="/images/PLAYGRAM-removebg-preview.png" alt="">
+				</div>
+			</div>
+
+			<div class="content_section">
+				
+				<div class="image_top_block">
+					<div class="rocket-container">
+						<img src="/images/rocket.png" alt="Rocket" class="rocket">
+					</div>
+					<div class="smoke">
+						<img src="images/output-onlinegiftools.gif" alt="">
+					</div>
+				</div>
+
+				<div class="text_wrapper">
+						<h4 class="subtitle">Multiplique seu dinheiro por coeficientes de mil</h4>
+						<h1 class="main_title">Jogue <span>Rocket X</span></h1>
+					<div class="text_block">
+						<p>Cada 3º voo dobra <strong>a aposta!</strong> <strong>80%</strong> de apostas vencedoras.</p>
+						<p> Registre-se agora para receber rodadas grátis e ganhar dinheiro!</p>
+					</div>
+					<a class="button" href="#order_form">Participe agora</a>
+				</div>
+
+			</div>
+
+			<div class="form_section">
+
+				<div class="lines_block">
+					<img class="line1" src="images/line1.png" alt="line">
+					<img class="line2" src="images/line2.png" alt="line">
+					<img class="line3" src="images/line3.png" alt="line">
+				</div>
+				
+				<div class="image_bottom_block1">
+					<div class="form_text_block">
+						<p class="title"><strong> + 500% </strong>no primeiro depósito já estão esperando por você</p>
+						<p class="description">Faça o registro para ativar os bônus!</p>
+					</div>
+					<div class="img_bottom_block1">
+						<img class="image_bottom1" src="images/logo1.png" alt="image">
+					</div>
+				</div>
+
+				<div id="order_form" class="form_wrapper">
+					<div class="register" data-hidden="true">
+
+						<div class="register__wrapper">
+							<div class="tabs">
+								<div class="tabs__wrapper">
+									<div class="tab email_tab active" id="mailtab" data-register-type="email">
+										<img class="icon email_icon" src="images/email_icon.svg" alt="email icon">
+										<span class="tab__text">Email</span>
+									</div>
+								</div>
+							</div>
+							<div class="shape">
+								<form class="form form-email form_state_hidden">
+									<div class="form__wrapper">
+										<div class="form__row">
+											<input class="email-input inp-form" id="email-input" type="text" name="email" placeholder="Email" required="">
+											<div class="formError email-error"></div>
+										</div>
+										<div class="form__row">
+											<input class="password password-input inp-form" id="password-input" type="password" name="password" placeholder="Пароль" required="">
+											<div class="formError password-error"></div>
+											<a class="password-control" href="#" onclick="return showHidePassword(this);"></a>
+										</div>
+									</div>
+									<div class="form__row form__row--rules">
+										<div class="form__checkbox">
+											<input class="form__checkbox-item" id="rules-mail" checked="" type="checkbox" name="rules-mail" value="rules-mail" required="">
+											<label class="form__label form__label--rules" for="rules-mail">Confirmo a minha maioridade e aceito as regras do site</label>
+										</div>
+									</div>
+								</form>
+								<div class="botom-pop botom-pop__mobile">
+									<button class="button-action pop-up-button form-btn js-order_button" type="button" disabled="disabled" style="opacity: 0.5;">Registo</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/init.js"></script>
+	<script src="js/scripts.js"></script>
+	<script>document.addEventListener('DOMContentLoaded', () => {
+		function spawnBills() {
+			const billCount = 30;
+			const container = document.getElementById('money');
+			const screenWidth = window.innerWidth;
+			const screenHeight = window.innerHeight;
+	
+			for (let i = 0; i < billCount; i++) {
+				const bill = document.createElement('div');
+				bill.className = 'bill';
+				bill.style.left = `${Math.random() * screenWidth}px`;
+				bill.style.top = `${Math.random() * screenHeight}px`;
+				bill.style.animationDuration = `${6 + Math.random() * 10}s`;
+	
+				container.appendChild(bill);
+			}
+		}
+	
+		window.onload = spawnBills;
+		window.onresize = function() {
+			document.getElementById('money').innerHTML = '';
+			spawnBills();
+		};
+	
+		function getDocumentDimensions() {
+			const body = document.body;
+			const html = document.documentElement;
+			const documentHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+			const documentWidth = Math.max(body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetWidth);
+			return { width: documentWidth, height: documentHeight };
+		}
+	
+		function getRandomPosition() {
+			const documentDimensions = getDocumentDimensions();
+			const x = Math.floor(Math.random() * documentDimensions.width);
+			const y = Math.floor(Math.random() * documentDimensions.height);
+			return { x, y };
+		}
+	
+		function getRandomDimensions() {
+			const dimensions = [1, 2];
+			const randomDimension = dimensions[Math.floor(Math.random() * dimensions.length)];
+			return randomDimension;
+		}
+	
+		const numOfDots = 700;
+		for (let i = 0; i < numOfDots; i++) {
+			const dot = document.createElement('div');
+			const dimension = getRandomDimensions();
+			dot.style.position = 'absolute';
+			dot.style.width = `${dimension}px`;
+			dot.style.height = `${dimension}px`;
+			dot.style.backgroundColor = 'white';
+	
+			const position = getRandomPosition();
+			dot.style.left = `${position.x}px`;
+			dot.style.top = `${position.y}px`;
+	
+			document.body.appendChild(dot);
+		}
+	
+		const rocket = document.querySelector('.rocket');
+		const smoke = document.querySelector('.smoke');
+		rocket.classList.add('animate');
+		smoke.classList.add('animate');
+	});
+    </script>
+</body>
+	</html>

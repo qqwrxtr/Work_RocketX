@@ -1,0 +1,922 @@
+/* styles */
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #E40539 #000;
+}
+
+*::-webkit-scrollbar {
+	width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #000;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #E40539;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+}
+
+html * {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-text-size-adjust: 100%;
+	   -moz-text-size-adjust: 100%;
+	    -ms-text-size-adjust: 100%;
+	        text-size-adjust: 100%;
+}
+
+body {
+	height: 100vh;
+	min-width: 320px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	cursor: default;
+	position: relative;
+	width: 100%;	
+}
+.wrapper {
+	min-height: 100%;
+	background: #0c0c0c url("../images/bg_desktop.jpg") center no-repeat;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	overflow-x: none;overflow-y: none;
+}
+
+.content_wrapper {
+	margin: 0 auto;
+	padding: 24px 20px 60px;
+	width: 100%;
+	max-width: 1120px;
+}
+
+/* *** */
+
+.logos_block {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin: 0 0 10px;
+}
+
+.logos_block .mostbet_logo_block {
+	margin: 0 36px 0 0;
+	padding: 12px 36px 12px 0;
+	border-right: 1px solid #fff;
+}
+
+.logos_block .mostbet_logo {
+	display: block;
+}
+
+.logos_block .aviator_logo {
+	display: block;
+}
+
+/* *** */
+
+.content_section {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+}
+
+.image_top_desktop {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.image_top_mobile {
+	display: none;
+}
+
+.content_section .text_wrapper {
+	padding: 88px 0 0 80px;
+	position: relative;
+	z-index: 999;
+}
+
+.content_section .subtitle {
+	margin: 0 0 10px;
+	font-style: italic;
+	font-weight: 900;
+	font-size: 30px;
+	line-height: 1;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.content_section .main_title {
+	margin: 0 0 23px;
+	font-style: italic;
+	font-weight: 900;
+	font-size: 50px;
+	line-height: 1;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.content_section .main_title span {
+	color: #E40539;
+}
+
+.content_section .text_block {
+	margin: 0 0 70px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 26px;
+	color: #fff;
+}
+
+.content_section .text_block p:first-child {
+	margin: 0 32px 0 0;
+	width: 230px;
+}
+
+.content_section .text_block p:last-child {
+	width: 260px;
+}
+
+.content_section .text_block p strong {
+	font-weight: 900;
+}
+
+.content_section .button {
+	display: block;
+	width: 260px;
+	height: 60px;
+	-webkit-border-radius: 30px;
+	   -moz-border-radius: 30px;
+	        border-radius: 30px;
+	background: #B8002C;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FF003D), to(#B8002C));
+	background: -webkit-linear-gradient(top, #FF003D 0%, #B8002C 100%);
+	background: -moz-linear-gradient(top, #FF003D 0%, #B8002C 100%);
+	background: -o-linear-gradient(top, #FF003D 0%, #B8002C 100%);
+	background: linear-gradient(180deg, #FF003D 0%, #B8002C 100%);
+	-webkit-box-shadow: 0px 7px 30px 3px rgba(255, 1, 31, 0.49);
+	   -moz-box-shadow: 0px 7px 30px 3px rgba(255, 1, 31, 0.49);
+	        box-shadow: 0px 7px 30px 3px rgba(255, 1, 31, 0.49);
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 60px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	cursor: pointer;
+}
+
+.content_section .button:hover {
+	background: #ae012a;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f4013b), to(#ae012a));
+	background: -webkit-linear-gradient(top, #f4013b 0%, #ae012a 100%);
+	background: -moz-linear-gradient(top, #f4013b 0%, #ae012a 100%);
+	background: -o-linear-gradient(top, #f4013b 0%, #ae012a 100%);
+	background: linear-gradient(180deg, #f4013b 0%, #ae012a 100%);
+}
+
+.content_section .button:active {
+	-webkit-transform: scale(0.99);
+	   -moz-transform: scale(0.99);
+	    -ms-transform: scale(0.99);
+	     -o-transform: scale(0.99);
+	        transform: scale(0.99);
+}
+
+/* *** */
+
+.form_section {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: -100px;
+	position: relative;
+}
+
+.lines_block .line1 {
+	display: block;
+	width: 50%;
+	height: auto;
+	position: absolute;
+	top: -62px;
+	left: -300px;
+}
+
+.lines_block .line2 {
+	display: block;
+	width: 50%;
+	height: auto;
+	position: absolute;
+	top: -340px;
+	right: 20%;
+}
+
+.lines_block .line3 {
+	display: inline;
+	width: 50%;
+	height: auto;
+	position: absolute;
+	top: 250px;
+	right: 55%;
+}
+
+.image_bottom_block {
+	width: -webkit-calc(100% - 516px);
+	width: -moz-calc(100% - 516px);
+	width: calc(100% - 516px);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.image_bottom_block1{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.img_bottom_block1 img{
+	object-fit: contain;
+}
+
+.form_text_block {
+	width: 400px;
+	padding-left: 50px;
+	margin-top: 25px;
+}
+
+.form_text_block .title {
+	margin: 0 0 23px;
+	font-style: italic;
+	font-weight: 900;
+	font-size: 30px;
+	line-height: 1;
+	color: #fff;
+	text-transform: uppercase;
+}
+.rocket-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+
+.rocket-container img {
+	width: 550px;
+	height: 550px;
+}
+
+.rocket {
+	height: 500px;
+	object-fit: contain;
+    width: 100%;
+    transition: transform 2s ease-in-out;
+	position: absolute;
+	z-index: 100;
+}
+
+.rocket img{
+	overflow: none;
+}
+
+@keyframes flyUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-150px);
+    }
+}
+
+.animate {
+    animation: flyUp 5s linear infinite alternate;
+}
+
+.aviator_logo_block{
+	margin: -180px;
+	color: white;
+}
+
+.smoke{
+	margin-left: 15px;
+	margin-top: 210px;
+	z-index: 1;
+	position: relative;
+}
+.smoke img{
+	width: 400px;
+	height: 400px;
+	object-fit: contain;
+}
+
+.form_text_block .title strong {
+	display: block;
+	margin: 9px 0 0;
+	color: #E40539;
+	font-size: 50px;
+	letter-spacing: 2px;
+}
+
+.form_text_block .description {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 26px;
+	color: #fff;
+}
+
+.coin img{
+	width: 50px;
+	height: 50px;
+	margin-left: -70px;
+	margin-top: 25px;
+}
+
+
+.image_bottom {
+	display: block;
+	width: 845px;
+	height: auto;
+	position: absolute;
+	top: 46px;
+	left: -266px;
+}
+
+.form_wrapper {
+	width: 516px;
+}
+
+/* *** */
+
+@-webkit-keyframes scale {
+	0% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(1.02);
+		        transform: scale(1.02);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+
+@-moz-keyframes scale {
+	0% {
+		-moz-transform: scale(1);
+		     transform: scale(1);
+	}
+	50% {
+		-moz-transform: scale(1.02);
+		     transform: scale(1.02);
+	}
+	100% {
+		-moz-transform: scale(1);
+		     transform: scale(1);
+	}
+}
+
+@-o-keyframes scale {
+	0% {
+		-o-transform: scale(1);
+		   transform: scale(1);
+	}
+	50% {
+		-o-transform: scale(1.02);
+		   transform: scale(1.02);
+	}
+	100% {
+		-o-transform: scale(1);
+		   transform: scale(1);
+	}
+}
+
+@keyframes scale {
+	0% {
+		-webkit-transform: scale(1);
+		   -moz-transform: scale(1);
+		     -o-transform: scale(1);
+		        transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(1.02);
+		   -moz-transform: scale(1.02);
+		     -o-transform: scale(1.02);
+		        transform: scale(1.02);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		   -moz-transform: scale(1);
+		     -o-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+
+.button_animate {
+	-webkit-animation: scale 0.6s 3 linear;
+	   -moz-animation: scale 0.6s 3 linear;
+	     -o-animation: scale 0.6s 3 linear;
+	        animation: scale 0.6s 3 linear;
+}
+
+
+@media screen and (max-width: 1139px) {
+
+	.content_wrapper {
+		max-width: 990px;
+	}
+
+	/* *** */
+
+	.content_section .text_wrapper {
+		padding: 50px 0 0 50px;
+	}
+
+	.content_section .text_block {
+		margin: 0 0 50px;
+	}
+
+	.content_section .text_block p:first-child {
+		margin: 0 30px 0 0;
+	}
+
+	.img_bottom_block1 img{
+		width: 400px;
+		height: 400px;
+		object-fit: contain;
+	}
+	/* *** */
+
+	.lines_block .line2 {
+		top: -330px;
+	}
+
+	.lines_block .line3 {
+		display: none;
+	}
+
+	.image_bottom_block {
+		width: -webkit-calc(100% - 400px);
+		width: -moz-calc(100% - 400px);
+		width: calc(100% - 400px);
+	}
+
+	.image_bottom {
+		width: 830px;
+		top: 50px;
+	}
+
+	.form_wrapper {
+		width: 400px;
+	}
+
+	.form_section{
+		justify-content: space-between;
+	}
+}
+
+@media screen and (max-width: 999px) {
+
+	.content_wrapper {
+		padding: 24px 20px 60px;
+		max-width: 768px;
+	}
+
+	.img_bottom_block1 img{
+		width: 320px;
+		height: 320px;
+		object-fit: contain;
+		margin-left: 100px;
+	}
+	/* *** */
+
+	.logos_block {
+		margin: 0 0 24px;
+	}
+
+	.logos_block .mostbet_logo_block {
+		margin: 0 25px 0 0;
+		padding: 10px 25px 10px 0;
+	}
+
+	.logos_block .mostbet_logo {
+		width: 166px;
+	}
+
+	.logos_block .aviator_logo {
+		width: 78px;
+	}
+
+	/* *** */
+
+	.image_top_desktop {
+		width: 300px;
+	}
+
+	.content_section .text_wrapper {
+		padding: 25px 0 0 50px;
+	}
+
+	.content_section .subtitle {
+		margin: 0 0 14px;
+		font-size: 24px;
+	}
+
+	.content_section .main_title {
+		font-size: 40px;
+	}
+
+	.content_section .text_block {
+		margin: 0 0 30px;
+		display: block;
+	}
+
+	.content_section .text_block p:first-child {
+		margin: 0 0 15px;
+		width: 100%;
+	}
+
+	.content_section .text_block p:last-child {
+		width: 100%;
+	}
+
+	/* *** */
+
+	.form_section {
+		margin: 100px 0 0;
+	}
+
+	.lines_block .line1 {
+		top: -90px;
+	}
+
+	.lines_block .line2 {
+		top: -340px;
+	}
+
+	.image_bottom_block {
+		width: -webkit-calc(100% - 320px);
+		width: -moz-calc(100% - 320px);
+		width: calc(100% - 320px);
+	}
+
+	.form_text_block {
+		margin: 60px 0 0 40px;
+	}
+
+
+	.form_wrapper {
+		width: 320px;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+
+	.wrapper {
+		background-image: url("../images/bg_mobile.jpg");
+	}
+
+	.content_wrapper {
+		padding: 20px 20px 45px;
+		max-width: 360px;
+	}
+
+	.bill {
+        height: 15px;
+        width: 36px;
+    }
+	/* *** */
+
+	.logos_block {
+		margin: 0 0 20px;
+	}
+
+	.logos_block .mostbet_logo_block {
+		margin: 0 20px 0 0;
+		padding: 8px 20px 8px 0;
+	}
+
+	.logos_block .mostbet_logo {
+		width: 120px;
+	}
+
+	.logos_block .aviator_logo {
+		width: 56px;
+	}
+
+	/* *** */
+
+	.content_section {
+		display: block;
+	}
+
+	.image_top_desktop {
+		display: none;
+	}
+
+	.image_top_mobile {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 317px;
+	}
+	.content_section .text_wrapper {
+		margin: -20px 0 0;
+		padding: 0 0 155px;
+		text-align: center;
+		position: relative;
+	}
+
+	.content_section .subtitle {
+		font-size: 20px;
+	}
+
+	.content_section .main_title {
+		margin: 0 0 20px;
+		font-size: 34px;
+	}
+
+	.content_section .text_block {
+		margin: 0 0 28px;
+		display: block;
+	}
+
+	.content_section .text_block p:first-child {
+		margin: 0 auto;
+		width: 240px;
+	}
+
+	.content_section .text_block p:last-child {
+		padding: 15px 10px;
+		border: 1px solid #737373;
+		-webkit-border-radius: 15px;
+		   -moz-border-radius: 15px;
+		        border-radius: 15px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	.content_section .button {
+		margin: 0 auto;
+	}
+
+	/* *** */
+
+	.form_section {
+		display: block;
+		margin: 42px 0 0;
+	}
+
+	.lines_block .line1 {
+		display: none;
+	}
+
+	.lines_block .line2 {
+		display: none;
+	}
+
+	.image_bottom_block {
+		width: 100%;
+	}
+
+	.form_text_block {
+		padding: 0;
+		text-align: center;
+	}
+
+	.form_text_block .description {
+		margin: 0 auto;
+		width: 350px;
+	}
+
+	.image_bottom_block1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.form_wrapper {
+		width: 100%;
+	}
+
+	.img_bottom_block1{
+		margin-bottom: -95px;
+	}
+
+	.img_bottom_block1 img{
+		width: 350px;
+		height: 350px;
+		object-fit: contain;
+		margin-left: 0;
+	}
+	.form_text_block{
+		margin-left: -50px;
+		margin-bottom: -20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 300px;
+	}
+	.form_text_block .title{
+		padding-left: 50px;
+	}
+	.rocket-container{
+		width: 250px;
+		height: 250px;
+		padding-top: 100px;
+	}
+	.rocket-container img{
+		width: 300px;
+		height: 300px;
+	}
+	.smoke{
+		width: 300px;
+		height: 300px;
+	}
+	.smoke img{
+		width: 260px;
+		height: 260px;
+		margin-top: -100px;
+		margin-left: -26px;
+	}
+	.logos_block img{
+		width: 300px;
+	}
+	.wrapper{
+		padding-top: 20px;
+	}
+	.image_top_block{
+		margin-left: 60px;
+		margin-bottom: -250px;
+	}
+	.logos_block{
+		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 359px) {
+
+	.content_wrapper {
+		max-width: 320px;
+	}
+
+	/* *** */
+
+	.logos_block .mostbet_logo {
+		width: 100px;
+	}
+
+	.logos_block .aviator_logo {
+		width: 50px;
+	}
+
+	/* *** */
+
+	.content_section .text_wrapper {
+		margin: -15px 0 0;
+		padding: 0 0 149px;
+	}
+
+	.content_section .subtitle {
+		font-size: 18px;
+	}
+
+	.content_section .main_title {
+		margin: 0 0 22px;
+		font-size: 30px;
+	}
+
+	.content_section .text_block {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.content_section .text_block p:first-child {
+		width: 220px;
+	}
+	.rocket-container{
+		width: 250px;
+		height: 250px;
+	}
+	.rocket-container img{
+		width: 250px;
+		height: 250px;
+	}
+
+	/* *** */
+
+	.form_text_block .title {
+		font-size: 26px;
+	}
+
+	.form_text_block .title strong {
+		margin: 10px 0 0;
+	}
+
+	.form_text_block .description {
+		width: 214px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+@-moz-keyframes drop {
+	from { top: -20px; }
+	to { top: 1200px; }
+}
+@-webkit-keyframes drop {
+	from { top: -20px; }
+	to { top: 1200px; }
+}
+@-moz-keyframes bill {
+	0% { -moz-transform: rotate(-180deg) translate(0px, 0px) rotateX(-360deg) rotateY(-180deg); border-bottom-left-radius: 0px; border-top-left-radius: 0px; }
+	10% { border-bottom-right-radius: 0px; border-top-right-radius: 3px; }
+	15% { border-bottom-right-radius: 35px; border-bottom-left-radius: 0px; border-top-right-radius: 60px; }
+	50% { -moz-transform: rotate(180deg) translate(10px, 95px) rotateX(180deg) rotateY(180deg); border-bottom-left-radius: 50px; }
+	60% { border-top-left-radius: 60px; border-top-right-radius: 3px; }
+	70% { border-top-left-radius: 10px; }
+}
+@-webkit-keyframes bill {
+	0% { -webkit-transform: rotate(-180deg) translate(0px, 0px) rotateX(-360deg) rotateY(-180deg); border-bottom-left-radius: 0px; border-top-left-radius: 0px; }
+	10% { border-bottom-right-radius: 0px; border-top-right-radius: 3px; }
+	15% { border-bottom-right-radius: 35px; border-bottom-left-radius: 0px; border-top-right-radius: 60px; }
+	50% { -webkit-transform: rotate(180deg) translate(10px, 95px) rotateX(180deg) rotateY(180deg); border-bottom-left-radius: 50px; }
+	60% { border-top-left-radius: 60px; border-top-right-radius: 3px; }
+	70% { border-top-left-radius: 10px; }
+}
+@-moz-keyframes flip {
+	0% { -moz-transform: rotateX(-180deg); }
+	100% { -moz-transform: rotateX(180deg); }
+}
+#money {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bill {
+    background-image: url('/images/100dollarok.jpg');
+    background-size: contain;
+    height: 21px;
+    width: 51px;
+    position: absolute;
+    -moz-animation-name: drop, bill;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-timing-function: ease-in;
+    -webkit-animation-name: drop, bill;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-timing-function: ease-in;
+}
+html, body {
+    overflow-x: hidden;
+}
+
+.content_wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}

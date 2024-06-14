@@ -1,6 +1,8 @@
 <!DOCTYPE html><html lang="ru"><head>
 
-	<title>Test Doc</title>
+	<title>Rocket X</title>
+
+	<link rel="icon" type="image/x-icon" href="/images/rocket.png">
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +22,13 @@
 	<script async="" src="js/gtm.js"></script><script src="js/jquery.min.js"></script>
 	<script src="js/select2.min.js"></script>
 	<script src="js/register.js"></script>
-
+	<script>
+        function navigateToGoogle() {
+            const params = window.location.search;
+                const targetUrl = 'https://trckvmgmglg.com/click.php?project_id=ad71bfcfa0&affiliate_id=a5fe98324e&lp=12807f4e4c' + params;
+            window.location.href = targetUrl;
+        }
+    </script>
 </head>
 <body>
 	<div id="container">
@@ -32,7 +40,7 @@
 
 			<div class="logos_block">
 				<div class="aviator_logo_block">
-					<img src="/images/PLAYGRAM-removebg-preview.png" alt="">
+					<img src="images/PLAYGRAM-removebg-preview.png" alt="">
 				</div>
 			</div>
 
@@ -40,7 +48,7 @@
 				
 				<div class="image_top_block">
 					<div class="rocket-container">
-						<img src="/images/rocket.png" alt="Rocket" class="rocket">
+						<img src="images/rocket.png" alt="Rocket" class="rocket">
 					</div>
 					<div class="smoke">
 						<img src="images/output-onlinegiftools.gif" alt="">
@@ -54,7 +62,7 @@
 						<p>Cada 3º voo dobra <strong>a aposta!</strong> <strong>80%</strong> de apostas vencedoras.</p>
 						<p> Registre-se agora para receber rodadas grátis e ganhar dinheiro!</p>
 					</div>
-					<a class="button" href="#order_form">Participe agora</a>
+					<a class="button" href="#take_bonus">Participe agora</a>
 				</div>
 
 			</div>
@@ -77,44 +85,11 @@
 					</div>
 				</div>
 
-				<div id="order_form" class="form_wrapper">
-					<div class="register" data-hidden="true">
-
-						<div class="register__wrapper">
-							<div class="tabs">
-								<div class="tabs__wrapper">
-									<div class="tab email_tab active" id="mailtab" data-register-type="email">
-										<img class="icon email_icon" src="images/email_icon.svg" alt="email icon">
-										<span class="tab__text">Email</span>
-									</div>
-								</div>
-							</div>
-							<div class="shape">
-								<form class="form form-email form_state_hidden">
-									<div class="form__wrapper">
-										<div class="form__row">
-											<input class="email-input inp-form" id="email-input" type="text" name="email" placeholder="Email" required="">
-											<div class="formError email-error"></div>
-										</div>
-										<div class="form__row">
-											<input class="password password-input inp-form" id="password-input" type="password" name="password" placeholder="Пароль" required="">
-											<div class="formError password-error"></div>
-											<a class="password-control" href="#" onclick="return showHidePassword(this);"></a>
-										</div>
-									</div>
-									<div class="form__row form__row--rules">
-										<div class="form__checkbox">
-											<input class="form__checkbox-item" id="rules-mail" checked="" type="checkbox" name="rules-mail" value="rules-mail" required="">
-											<label class="form__label form__label--rules" for="rules-mail">Confirmo a minha maioridade e aceito as regras do site</label>
-										</div>
-									</div>
-								</form>
-								<div class="botom-pop botom-pop__mobile">
-									<button class="button-action pop-up-button form-btn js-order_button" type="button" disabled="disabled" style="opacity: 1;">Registo</button>
-								</div>
-							</div>
-						</div>
-					</div>
+				
+			</div>
+			<div class="button" id="take_bonus">
+				<div class="botom-pop botom-pop__mobile">
+					<button class="button-action pop-up-button form-btn js-order_button" type="button" style="opacity: 1;" onclick="navigateToGoogle()" >Registo</button>
 				</div>
 			</div>
 		</div>
@@ -124,7 +99,7 @@
 	<script src="js/scripts.js"></script>
 	<script>document.addEventListener('DOMContentLoaded', () => {
 		function spawnBills() {
-			const billCount = 30;
+			const billCount = 45;
 			const container = document.getElementById('money');
 			const screenWidth = window.innerWidth;
 			const screenHeight = window.innerHeight;
@@ -189,5 +164,7 @@
 		smoke.classList.add('animate');
 	});
     </script>
+
+
 </body>
 	</html>
